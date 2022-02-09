@@ -4,6 +4,13 @@
 
 6 tries to guess a 5-letter word
 
+### Making a guess
+
+Detect keypresses
+    - if keypress is a letter
+        -update "letters" attribute
+            - update tile markup based on "letters" value
+
 Typing in the letter will display the letter in the tile
 Backspace will delete letters
 Enter will submit guess
@@ -15,6 +22,10 @@ Guess colors (data-state):
     - green: "correct," letter in word and in right position
 
 Hard Mode: present or correct letters must be used in subsequent guesses
+
+Guesses are saved in Local Storage
+
+
 ## Design
 
 Tiles 5x6
@@ -31,7 +42,8 @@ When typing a letter:
 When submitting guess:
     - Tiles will flip up and background color will change based on guess
 
-## Star Wars Update
+
+#### Star Wars Update
 
 When typing a letter, dropdown of options
     - use search notes app on codesandbox and from skillcrush for live search example
